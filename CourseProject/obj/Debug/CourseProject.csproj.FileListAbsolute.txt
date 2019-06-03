@@ -1,0 +1,31 @@
+C:\Users\gugka\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.csprojAssemblyReference.cache
+C:\Users\gugka\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.MainForm.resources
+C:\Users\gugka\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.Properties.Resources.resources
+C:\Users\gugka\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.csproj.GenerateResource.cache
+C:\Users\gugka\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.csproj.CoreCompileInputs.cache
+C:\Users\gugka\source\repos\CourseProject\CourseProject\bin\Debug\CourseProject.exe.config
+C:\Users\gugka\source\repos\CourseProject\CourseProject\bin\Debug\CourseProject.exe
+C:\Users\gugka\source\repos\CourseProject\CourseProject\bin\Debug\CourseProject.pdb
+C:\Users\gugka\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.exe
+C:\Users\gugka\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.pdb
+D:\Олег\CourseProject\CourseProject\CourseProject\obj\Debug\CourseProject.csprojAssemblyReference.cache
+D:\Олег\CourseProject\CourseProject\CourseProject\obj\Debug\CourseProject.exe
+D:\Олег\CourseProject\CourseProject\CourseProject\obj\Debug\CourseProject.pdb
+D:\Олег\CourseProject\CourseProject\CourseProject\bin\Debug\CourseProject.exe.config
+D:\Олег\CourseProject\CourseProject\CourseProject\bin\Debug\CourseProject.exe
+D:\Олег\CourseProject\CourseProject\CourseProject\bin\Debug\CourseProject.pdb
+D:\Олег\CourseProject\CourseProject\CourseProject\obj\Debug\CourseProject.MainForm.resources
+D:\Олег\CourseProject\CourseProject\CourseProject\obj\Debug\CourseProject.Properties.Resources.resources
+D:\Олег\CourseProject\CourseProject\CourseProject\obj\Debug\CourseProject.csproj.GenerateResource.cache
+D:\Олег\CourseProject\CourseProject\CourseProject\obj\Debug\CourseProject.csproj.CoreCompileInputs.cache
+D:\Visual Studio\CourseProject\CourseProject\bin\Debug\CourseProject.exe.config
+D:\Visual Studio\CourseProject\CourseProject\bin\Debug\CourseProject.exe
+D:\Visual Studio\CourseProject\CourseProject\bin\Debug\CourseProject.pdb
+D:\Visual Studio\CourseProject\CourseProject\obj\Debug\CourseProject.csprojAssemblyReference.cache
+D:\Visual Studio\CourseProject\CourseProject\obj\Debug\CourseProject.MainForm.resources
+D:\Visual Studio\CourseProject\CourseProject\obj\Debug\CourseProject.Properties.Resources.resources
+D:\Visual Studio\CourseProject\CourseProject\obj\Debug\CourseProject.csproj.GenerateResource.cache
+D:\Visual Studio\CourseProject\CourseProject\obj\Debug\CourseProject.csproj.CoreCompileInputs.cache
+D:\Visual Studio\CourseProject\CourseProject\obj\Debug\CourseProject.exe
+D:\Visual Studio\CourseProject\CourseProject\obj\Debug\CourseProject.pdb
+D:\Visual Studio\CourseProject\CourseProject\obj\Debug\CourseProject.csproj.ResolveComReference.cache
