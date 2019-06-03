@@ -20,6 +20,7 @@ namespace CourseProject
 
         static int Level = 1;
         static int Proverka = 0;
+        int NumCount = 0;
         bool LoginCheck = false;
         string LoginName;
         List<Player> playersList = new List<Player>();
@@ -34,7 +35,6 @@ namespace CourseProject
                 GetRandom();
                 textBoxChR.Focus();
             }
-
         }
 
         private void RaitingButton_Click(object sender, EventArgs e)
@@ -49,6 +49,7 @@ namespace CourseProject
         private void SupportButton_Click(object sender, EventArgs e)
         {
             tabControl.SelectedIndex = 4;
+            label3.Focus();
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
@@ -87,6 +88,7 @@ namespace CourseProject
                 LoginCheck = true;
                 tabControl.SelectedIndex = 1;
                 textBoxRead.Focus();
+                UnlockButton(LoginName);
             }
             else MessageBox.Show("ERROR!!!");
         }
@@ -104,7 +106,21 @@ namespace CourseProject
                 int b = GameAlgorithm.Exercises(a, Level);
                 textBoxWrite.Text += Convert.ToString(b);
                 textBoxRead.Text = "";
-                textBoxPrevNum.Text += a + " " + b + "\r\n";
+                if (NumCount < 8)
+                {
+                    NumCount++;
+                    textBoxPrevNumX.Text += a + "\r\n";
+                    textBoxPrevNumY.Text += b + "\r\n";
+                }
+                else
+                {
+                    NumCount = 0;
+                    NumCount++;
+                    textBoxPrevNumX.Text = "";
+                    textBoxPrevNumY.Text = "";
+                    textBoxPrevNumX.Text += a + "\r\n";
+                    textBoxPrevNumY.Text += b + "\r\n";
+                }
             }
         }
 
@@ -122,23 +138,29 @@ namespace CourseProject
             }
         }
 
-        public void UnlockButton(int Level)
+        public void UnlockButton(string player)
         {
-            switch (Level)
+            for (int i = 0; i < playersList.Count; i++)
             {
-                case 1: button1.Enabled = true; break;
-                case 2: button2.Enabled = true; break;
-                case 3: button3.Enabled = true; break;
-                case 4: button4.Enabled = true; break;
-                case 5: button5.Enabled = true; break;
-                case 6: button6.Enabled = true; break;
-                case 7: button7.Enabled = true; break;
-                case 8: button8.Enabled = true; break;
-                case 9: button9.Enabled = true; break;
-                case 10: button10.Enabled = true; break;
-                case 11: button11.Enabled = true; break;
-                case 12: button12.Enabled = true; break;
+                if (playersList[i].name == LoginName)
+                {
+                    Level = playersList[i].score;
+                    break;
+                }
             }
+
+            if (Level > 1) button2.Enabled = true;
+            if (Level > 2) button3.Enabled = true;
+            if (Level > 3) button4.Enabled = true;
+            if (Level > 4) button5.Enabled = true;
+            if (Level > 5) button6.Enabled = true;
+            if (Level > 6) button7.Enabled = true;
+            if (Level > 7) button8.Enabled = true;
+            if (Level > 8) button9.Enabled = true;
+            if (Level > 9) button10.Enabled = true;
+            if (Level > 10) button11.Enabled = true;
+            if (Level > 11) button12.Enabled = true;
+            
         }
 
         #endregion
@@ -162,10 +184,11 @@ namespace CourseProject
                 {
                     Win();
                     Level++;
-                    textBoxPrevNum.Text = "";
+                    textBoxPrevNumX.Text = "";
+                    textBoxPrevNumY.Text = "";
                     textBoxWrite.Text = "";
                     tabControl.SelectedIndex = 1;
-                    UnlockButton(Level);
+                    UnlockButton(LoginName);
                     Proverka = 0;
                 }
                 GetRandom();
@@ -232,6 +255,8 @@ namespace CourseProject
 
         private void PrinRaiting()
         {
+            textBoxRL.Text = "";
+            textBoxRS.Text = "";
             int n;
             if (playersList.Count < 10)
                 n = playersList.Count;

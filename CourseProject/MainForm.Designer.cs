@@ -41,7 +41,10 @@
             this.textBoxLogin = new System.Windows.Forms.TextBox();
             this.LoginButton = new System.Windows.Forms.Button();
             this.GamePage = new System.Windows.Forms.TabPage();
-            this.textBoxPrevNum = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxPrevNumY = new System.Windows.Forms.TextBox();
+            this.textBoxPrevNumX = new System.Windows.Forms.TextBox();
             this.textBoxWrite = new System.Windows.Forms.TextBox();
             this.textBoxRead = new System.Windows.Forms.TextBox();
             this.LevelPanel = new System.Windows.Forms.Panel();
@@ -72,15 +75,15 @@
             this.textBoxRL = new System.Windows.Forms.TextBox();
             this.textBoxRS = new System.Windows.Forms.TextBox();
             this.HelpPage = new System.Windows.Forms.TabPage();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxDescription = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBoxDescription = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.ButtonPanel.SuspendLayout();
             this.Panel.SuspendLayout();
             this.tabControl.SuspendLayout();
@@ -91,9 +94,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.RaitingPage.SuspendLayout();
             this.HelpPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // ButtonPanel
@@ -255,7 +258,10 @@
             // GamePage
             // 
             this.GamePage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.GamePage.Controls.Add(this.textBoxPrevNum);
+            this.GamePage.Controls.Add(this.label2);
+            this.GamePage.Controls.Add(this.label1);
+            this.GamePage.Controls.Add(this.textBoxPrevNumY);
+            this.GamePage.Controls.Add(this.textBoxPrevNumX);
             this.GamePage.Controls.Add(this.textBoxWrite);
             this.GamePage.Controls.Add(this.textBoxRead);
             this.GamePage.Controls.Add(this.LevelPanel);
@@ -265,30 +271,74 @@
             this.GamePage.Size = new System.Drawing.Size(516, 439);
             this.GamePage.TabIndex = 1;
             // 
-            // textBoxPrevNum
+            // label2
             // 
-            this.textBoxPrevNum.Font = new System.Drawing.Font("Post Pixel-7", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxPrevNum.Location = new System.Drawing.Point(20, 98);
-            this.textBoxPrevNum.Multiline = true;
-            this.textBoxPrevNum.Name = "textBoxPrevNum";
-            this.textBoxPrevNum.Size = new System.Drawing.Size(80, 319);
-            this.textBoxPrevNum.TabIndex = 8;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Post Pixel-7", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(327, 327);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 32);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Y =";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Post Pixel-7", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(327, 132);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 32);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "X =";
+            // 
+            // textBoxPrevNumY
+            // 
+            this.textBoxPrevNumY.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.textBoxPrevNumY.Font = new System.Drawing.Font("Post Pixel-7", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxPrevNumY.ForeColor = System.Drawing.Color.White;
+            this.textBoxPrevNumY.Location = new System.Drawing.Point(73, 98);
+            this.textBoxPrevNumY.Multiline = true;
+            this.textBoxPrevNumY.Name = "textBoxPrevNumY";
+            this.textBoxPrevNumY.Size = new System.Drawing.Size(55, 319);
+            this.textBoxPrevNumY.TabIndex = 9;
+            this.textBoxPrevNumY.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxPrevNumX
+            // 
+            this.textBoxPrevNumX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.textBoxPrevNumX.Font = new System.Drawing.Font("Post Pixel-7", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxPrevNumX.ForeColor = System.Drawing.Color.White;
+            this.textBoxPrevNumX.Location = new System.Drawing.Point(20, 98);
+            this.textBoxPrevNumX.Multiline = true;
+            this.textBoxPrevNumX.Name = "textBoxPrevNumX";
+            this.textBoxPrevNumX.Size = new System.Drawing.Size(55, 319);
+            this.textBoxPrevNumX.TabIndex = 8;
+            this.textBoxPrevNumX.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxWrite
             // 
-            this.textBoxWrite.Font = new System.Drawing.Font("Post Pixel-7", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxWrite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.textBoxWrite.Font = new System.Drawing.Font("Post Pixel-7", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxWrite.ForeColor = System.Drawing.Color.White;
             this.textBoxWrite.Location = new System.Drawing.Point(383, 324);
+            this.textBoxWrite.MaxLength = 3;
             this.textBoxWrite.Name = "textBoxWrite";
-            this.textBoxWrite.Size = new System.Drawing.Size(80, 30);
+            this.textBoxWrite.Size = new System.Drawing.Size(80, 35);
             this.textBoxWrite.TabIndex = 7;
+            this.textBoxWrite.Text = "?";
             this.textBoxWrite.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxRead
             // 
-            this.textBoxRead.Font = new System.Drawing.Font("Post Pixel-7", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxRead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.textBoxRead.Font = new System.Drawing.Font("Post Pixel-7", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxRead.ForeColor = System.Drawing.Color.White;
             this.textBoxRead.Location = new System.Drawing.Point(383, 129);
+            this.textBoxRead.MaxLength = 3;
             this.textBoxRead.Name = "textBoxRead";
-            this.textBoxRead.Size = new System.Drawing.Size(80, 30);
+            this.textBoxRead.Size = new System.Drawing.Size(80, 35);
             this.textBoxRead.TabIndex = 5;
             this.textBoxRead.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBoxRead.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxRead_KeyDown);
@@ -308,7 +358,7 @@
             this.LevelPanel.Controls.Add(this.button3);
             this.LevelPanel.Controls.Add(this.button2);
             this.LevelPanel.Controls.Add(this.button1);
-            this.LevelPanel.Location = new System.Drawing.Point(3, 24);
+            this.LevelPanel.Location = new System.Drawing.Point(5, 16);
             this.LevelPanel.Margin = new System.Windows.Forms.Padding(2);
             this.LevelPanel.Name = "LevelPanel";
             this.LevelPanel.Size = new System.Drawing.Size(506, 49);
@@ -674,17 +724,98 @@
             // 
             this.HelpPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.HelpPage.Controls.Add(this.textBox5);
-            this.HelpPage.Controls.Add(this.textBox3);
             this.HelpPage.Controls.Add(this.textBoxDescription);
             this.HelpPage.Controls.Add(this.textBox2);
             this.HelpPage.Controls.Add(this.textBox1);
             this.HelpPage.Controls.Add(this.pictureBox3);
-            this.HelpPage.Controls.Add(this.textBox4);
+            this.HelpPage.Controls.Add(this.label3);
+            this.HelpPage.Controls.Add(this.label4);
             this.HelpPage.Location = new System.Drawing.Point(5, 4);
             this.HelpPage.Margin = new System.Windows.Forms.Padding(2);
             this.HelpPage.Name = "HelpPage";
             this.HelpPage.Size = new System.Drawing.Size(516, 439);
             this.HelpPage.TabIndex = 3;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("Post Pixel-7", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox5.Location = new System.Drawing.Point(20, 387);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(476, 27);
+            this.textBox5.TabIndex = 27;
+            this.textBox5.Text = "Made by kartoshe4ka || Олег Гугкаев    Copyright © STARostъ 2019";
+            // 
+            // textBoxDescription
+            // 
+            this.textBoxDescription.Font = new System.Drawing.Font("Post Pixel-7", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxDescription.Location = new System.Drawing.Point(20, 204);
+            this.textBoxDescription.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.textBoxDescription.Multiline = true;
+            this.textBoxDescription.Name = "textBoxDescription";
+            this.textBoxDescription.ReadOnly = true;
+            this.textBoxDescription.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBoxDescription.Size = new System.Drawing.Size(476, 139);
+            this.textBoxDescription.TabIndex = 24;
+            this.textBoxDescription.TabStop = false;
+            this.textBoxDescription.Text = resources.GetString("textBoxDescription.Text");
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Post Pixel-7", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox2.ForeColor = System.Drawing.Color.White;
+            this.textBox2.Location = new System.Drawing.Point(183, 53);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(313, 104);
+            this.textBox2.TabIndex = 2;
+            this.textBox2.Text = "ЧИСЛОЕД";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Post Pixel-7", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.textBox1.Location = new System.Drawing.Point(183, 20);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(313, 38);
+            this.textBox1.TabIndex = 2;
+            this.textBox1.Text = "ОБУЧАЮЩАЯ ПРОГРАММА";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox3.Location = new System.Drawing.Point(20, 20);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(129, 137);
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Post Pixel-7", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(195, 160);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(136, 38);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "ПРАВИЛА";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Post Pixel-7", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(176, 346);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(204, 38);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "О ПРОГРАММЕ";
             // 
             // pictureBox2
             // 
@@ -707,97 +838,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(20, 20);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(129, 137);
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Post Pixel-7", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(183, 20);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(313, 38);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "ОБУЧАЮЩАЯ ПРОГРАММА";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Post Pixel-7", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(183, 64);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(313, 104);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "ЧИСЛОЕД";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBoxDescription
-            // 
-            this.textBoxDescription.Font = new System.Drawing.Font("Post Pixel-7", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxDescription.Location = new System.Drawing.Point(20, 199);
-            this.textBoxDescription.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
-            this.textBoxDescription.Multiline = true;
-            this.textBoxDescription.Name = "textBoxDescription";
-            this.textBoxDescription.ReadOnly = true;
-            this.textBoxDescription.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxDescription.Size = new System.Drawing.Size(233, 217);
-            this.textBoxDescription.TabIndex = 24;
-            this.textBoxDescription.TabStop = false;
-            this.textBoxDescription.Text = "1. ВВЕДИТЕ СВОЙ ЛОГИН;\r\n    1.1. ЕСЛИ ТАКОЙ ЛОГИН ЕСТЬ, \r\n       ВЫ ВЕРНЕТЕСЬ К П" +
-    "РЕДЫ-\r\n       ДУЩЕМУ МЕСТУ;\r\n    1.2. ИНАЧЕ БУДЕТ СОЗДАН \r\n        НОВЫЙ ИГРОК;";
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Post Pixel-7", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(20, 163);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(221, 38);
-            this.textBox4.TabIndex = 25;
-            this.textBox4.Text = "ПРАВИЛА";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Post Pixel-7", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(275, 163);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(221, 38);
-            this.textBox3.TabIndex = 26;
-            this.textBox3.Text = "О ПРОГРАММЕ";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Post Pixel-7", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox5.Location = new System.Drawing.Point(275, 199);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox5.Size = new System.Drawing.Size(221, 217);
-            this.textBox5.TabIndex = 27;
-            this.textBox5.TabStop = false;
-            this.textBox5.Text = "ОПИСАНИЕ";
             // 
             // MainForm
             // 
@@ -827,9 +867,9 @@
             this.RaitingPage.PerformLayout();
             this.HelpPage.ResumeLayout(false);
             this.HelpPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -850,7 +890,7 @@
         private System.Windows.Forms.TextBox textBox;
         private System.Windows.Forms.TextBox textBoxLogin;
         public System.Windows.Forms.Button LoginButton;
-        private System.Windows.Forms.TextBox textBoxPrevNum;
+        private System.Windows.Forms.TextBox textBoxPrevNumX;
         private System.Windows.Forms.TextBox textBoxWrite;
         private System.Windows.Forms.TextBox textBoxRead;
         private System.Windows.Forms.Panel LevelPanel;
@@ -884,10 +924,13 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBoxDescription;
+        private System.Windows.Forms.TextBox textBoxPrevNumY;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 
